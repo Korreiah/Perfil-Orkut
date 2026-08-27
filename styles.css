@@ -1,0 +1,456 @@
+@font-face {
+    font-family: 'OrkutFont';
+    src: url('Fonts/Hello Angel.otf') format('opentype'),
+         url('fonts/Hello Angel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('fonts/arial%20arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #D9E6F7;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.button-orkut {
+    background: linear-gradient(to bottom, #ffffff, #c8c7c7);
+    font-family: 'OrkutFont', Arial, sans-serif;
+    color: #EB49AF;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #a0a0a0;
+    margin-left: 150px;
+}
+
+.button-header {
+    background-color: #5a92cd;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.button-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.word-space {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.email {
+    margin-left: 525px;
+    cursor: pointer;
+}
+
+.sair {
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* BARRA DE PESQUISA */
+.orkut-search-container {
+    display: inline-flex;
+    align-items: center;
+    background-color: #5b7da9;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.orkut-search-container input {
+    border: none;
+    outline: none;
+    height: 24px;
+    width: 180px;
+    padding: 0 4px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555555;
+}
+
+.orkut-search-container input::-webkit-search-decoration,
+.orkut-search-container input::-webkit-search-cancel-button,
+.orkut-search-container input::-webkit-search-results-button,
+.orkut-search-container input::-webkit-search-results-decoration {
+    display: none;
+}
+
+.orkut-search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+/* CONTAINER PRINCIPAL */
+.container-principal {
+    max-width: 1400px;
+    margin: 15px 136px;
+    padding: 0 10px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* PAINEL ESQUERDO */
+.painel-left {
+    width: 270px;
+    flex-shrink: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #C4D3E4;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.photo {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.name-user {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #006699;
+    font-weight: bold;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+.status-orkut {
+    text-align: center;
+    font-size: 13px;
+    color: #242424;
+    background-color: #ffffff;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.genero {
+    color: #999898;
+    margin-left: 10px;
+}
+
+.location {
+    color: #999898;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.menu-links {
+    color: #131313;
+    cursor: pointer;
+}
+
+.profile {
+    background-color: #EFF8FF;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 1px solid #C4D3E4;
+    margin-bottom: -1px;
+}
+
+.profile:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.profile:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* CONTEUDO PRINCIPAL E PAINEL CENTRAL */
+.conteudo-principal {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.painel-central {
+    flex: 1;
+    width: 750px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.painel-central section {
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 750px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.259);
+    border: 1px solid #bfc9d9;
+    padding: 15px;
+    border-radius: 8px 60px 8px 8px;
+}
+
+.tip-box {
+    background-color: #FFFFCC;
+    border: 1px solid #E0E0A0;
+    padding: 8px 10px;
+    margin-top: 15px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #333;
+}
+
+.tip-box a {
+    color: #006699;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tip-box a:hover {
+    text-decoration: underline;
+}
+
+.content-separator {
+    border: none;
+    border-top: 1px solid #D4E2F7;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* CARD DE PEDIDO DE AMIZADE (UNIFICADO) */
+.friend-request-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #EBF2FA;
+    border: 1px solid #D9E6F7;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.request-profile-pic {
+    width: 80px;
+    height: auto;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-left: 3px;
+}
+
+.request-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #D9E6F7;
+    padding: 10px;
+    margin-left: 4px;
+}
+
+.requester-name {
+    font-weight: bold;
+    color: #006699;
+    margin-bottom: 2px;
+}
+
+.request-question {
+    font-size: 14px;
+    color: #676865;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.request-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-accept,
+.btn-decline {
+    color: #5A92CD;
+    background-color: white;
+    border: 1px solid #c2c2c2;
+    border-radius: 7px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: lowercase;
+}
+
+.btn-accept:hover,
+.btn-decline:hover {
+    background-color: #e6e6e6;
+}
+
+.title {
+    letter-spacing: 2px;
+}
+
+.sub-item {
+    display: inline;
+    font-size: 12px;
+    padding: 1px 15px;
+    letter-spacing: 2px;
+}
+
+.emoji {
+    display: inline;
+    margin-left: 12px;
+    letter-spacing: 4px;
+    color: #006699;
+}
+
+.box-yellow {
+    background-color: #FCFDDE;
+    max-width: 900px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fundo-azul {
+    background-color: #D9E6F7;
+    padding: 3px 0px 10px 2px;
+    border-radius: 8px;
+}
+
+/* PAINEL DIREITO */
+.painel-right, .painel-right2 {
+    background: #ffffff;
+    border: 1px solid #c9d7f1;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.painel-right h3, .painel-right2 h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.grid-amigos {
+    display: flex;
+    gap: 6px;
+    width: 360px;
+    flex-shrink: 0;
+}
+
+.card-amigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9e9e9;
+    padding: 8px;
+    border-radius: 6px;
+    width: 120px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-amigo img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.card-amigo a {
+    color: #4a86e8;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    word-break: break-word;
+}
+
+.card-amigo a:hover {
+    text-decoration: underline;
+}
+
+.button-bottom {
+    margin-top: 20px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.gerenciar {
+    font-family: 'Arial', sans-serif;
+    font-weight: 800;
+    color: #4a86e8;
+    border-radius: 10px;
+    border: 1px solid #9b9b9c;
+    max-width: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background: linear-gradient(to bottom, #ffffff, #c8c7c7);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 8px 20px 2px 20px;
+    margin-left: 150px;
+    max-width: 1450px;
+}
+
+.rodape p {
+    color: #4a86e8;
+    margin: 0;
+}
+
+.rodape p:not(:last-child), 
+.rodape a:not(:last-child) {
+    border-right: 1px solid #4a86e8;
+    padding-right: 12px;
+}
